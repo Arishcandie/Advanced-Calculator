@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light mode background */
+    color: #333; /* Light mode text color */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background-color: #212121; /* Dark mode background */
+    color: #f5f5f5; /* Dark mode text color */
+  }
+  
+  .calculator {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Light mode calculator background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  body.dark-mode .calculator {
+    background-color: #333; /* Dark mode calculator background */
+    border-color: #444;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Increase font size */
+    font-family: 'Georgia', serif; /* Change font family */
+    font-weight: bold; /* Make it bold */
+    color: #85c1e9; /* Highlighting color for the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  body.dark-mode h1 {
+    color: #34c759; /* Highlighting color for the title in dark mode */
+  }
+  
+  .theme-toggle {
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 10px; /* Add padding to align with the display */
+  }
+  
+  #theme-button {
+    background-color: #85c1e9; /* Highlighting color for the theme button */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Ensure the button doesn't stretch */
+  }
+  
+  #theme-button:hover {
+    background-color: #6ca6cd; /* Darker shade for hover */
+  }
+  
+  body.dark-mode #theme-button {
+    background-color: #34c759; /* Highlighting color for the theme button in dark mode */
+  }
+  
+  body.dark-mode #theme-button:hover {
+    background-color: #2da94f; /* Darker shade for hover in dark mode */
+  }
+  
+  .display {
+    width: calc(100% - 20px); /* Adjust width to match the calculator's padding */
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light mode display background */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 24px;
+    text-align: right; /* Keep text right-aligned */
+    color: #333; /* Light mode display text color */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-left: auto; /* Center the display */
+    margin-right: auto; /* Center the display */
+  }
+  
+  body.dark-mode .display {
+    background-color: #444; /* Dark mode display background */
+    border-color: #555;
+    color: #f5f5f5; /* Dark mode display text color */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    width: 100%;
+    height: 50px;
+    background-color: #e0e0e0; /* Light mode button background */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px;
+    color: #333; /* Light mode button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #d0d0d0; /* Light mode button hover */
+  }
+  
+  body.dark-mode .button {
+    background-color: #555; /* Dark mode button background */
+    border-color: #666;
+    color: #f5f5f5; /* Dark mode button text color */
+  }
+  
+  body.dark-mode .button:hover {
+    background-color: #666; /* Dark mode button hover */
+  }
+  
+  .button.operator {
+    background-color: #ff9500; /* Operator button color */
+    color: #fff;
+  }
+  
+  .button.operator:hover {
+    background-color: #e08900; /* Operator button hover */
+  }
+  
+  .button.memory {
+    background-color: #34c759; /* Memory button color */
+    color: #fff;
+  }
+  
+  .button.memory:hover {
+    background-color: #2da94f; /* Memory button hover */
+  }
+  
+  .button.clear {
+    background-color: #ff3b30; /* Clear button color */
+    color: #fff;
+  }
+  
+  .button.clear:hover {
+    background-color: #e63329; /* Clear button hover */
+  }
+  
+  .button.equals {
+    background-color: #007aff; /* Equals button color */
+    color: #fff;
+    grid-column: span 2;
+  }
+  
+  .button.equals:hover {
+    background-color: #0069d9; /* Equals button hover */
+  }

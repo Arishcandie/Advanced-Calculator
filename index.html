@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>CALCULATOR</h1>
+    <div class="theme-toggle">
+      <button id="theme-button">🌙 Dark Mode</button>
+    </div>
+    <input type="text" class="display" id="display" disabled>
+    <div class="buttons">
+      <button class="button memory" onclick="memoryClear()">MC</button>
+      <button class="button memory" onclick="memoryRecall()">MR</button>
+      <button class="button memory" onclick="memoryAdd()">M+</button>
+      <button class="button memory" onclick="memorySubtract()">M-</button>
+      <button class="button operator" onclick="updateDisplay('√')">√</button>
+      <button class="button operator" onclick="updateDisplay('^')">^</button>
+      <button class="button operator" onclick="updateDisplay('%')">%</button>
+      <button class="button operator" onclick="updateDisplay(' / ')">/</button>
+      <button class="button" onclick="updateDisplay(7)">7</button>
+      <button class="button" onclick="updateDisplay(8)">8</button>
+      <button class="button" onclick="updateDisplay(9)">9</button>
+      <button class="button operator" onclick="updateDisplay(' * ')">*</button>
+      <button class="button" onclick="updateDisplay(4)">4</button>
+      <button class="button" onclick="updateDisplay(5)">5</button>
+      <button class="button" onclick="updateDisplay(6)">6</button>
+      <button class="button operator" onclick="updateDisplay(' - ')">-</button>
+      <button class="button" onclick="updateDisplay(1)">1</button>
+      <button class="button" onclick="updateDisplay(2)">2</button>
+      <button class="button" onclick="updateDisplay(3)">3</button>
+      <button class="button operator" onclick="updateDisplay(' + ')">+</button>
+      <button class="button" onclick="updateDisplay(0)">0</button>
+      <button class="button" onclick="updateDisplay('.')">.</button>
+      <button class="button" onclick="backspace()">←</button>
+      <button class="button clear" onclick="clearDisplay()">C</button>
+      <button class="button equals" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
